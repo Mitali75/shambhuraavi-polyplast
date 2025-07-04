@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background-color: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc00;
+    }
+
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .about-us {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      padding: 50px 40px;
+      margin-top: 40px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .about-us:hover {
+      transform: translateY(-10px);
+    }
+
+    .about-us h2 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .about-us p {
+      font-size: 1.2rem;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      text-align: justify;
+      padding: 0 40px;
+    }
+
+    .about-us .cta {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #ff6347;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid #ff6347;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      padding: 0;
+    }
+
+    footer ul li {
+      margin: 0 15px;
+    }
+
+    footer ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    footer ul li a:hover {
+      color: #ff6347;
+    }
+
+    footer p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-us {
+        padding: 40px 20px;
+      }
+
+      .about-us h2 {
+        font-size: 2rem;
+      }
+
+      .about-us p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .nav-links a {
+        margin: 10px;
+      }
+
+      footer p {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-brand">
+      <img src="logo.png.jpg" alt="Logo" />
+      <span>Shambhuraavi Polyplast</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="feature.html">Features</a>
+      <a href="machine.html">Machine</a>
+      <a href="clients.html">Clients</a>
+      <a href="product.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+      
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <main>
+      <section class="about-us">
+        <h2>About Us</h2>
+        <p>
+          Shambhuraavi Polyplast is led by Mr. Santosh Randive, Mr. Satish Gawade, and Mr. Shamkant Kale, bringing over 20 years of expertise in plastic manufacturing and packaging.
+
+We specialize in flexible packaging films and plastic strap rolls, known for our quality, reliability, and precision. Our goal is to offer eco-friendly packaging solutions that meet the needs of modern industries.
+
+With a focus on:
+
+Advanced manufacturing techniques
+
+Consistent quality control
+
+Timely delivery and client support
+
+We proudly serve both Indian and multinational clients, delivering durable and innovative products like:
+
+LDPE / HDPE Films
+
+Shrink & Stretch Films
+
+Air Bubble & Foam Sheets
+
+Antistatic and VCI Bags
+
+PP Strap Rolls and more
+
+Our team ensures zero-defect output, cost-effective production, and custom solutions for every business need.
+
+
+        </p>
+        <div class="cta">
+          Get in touch for customized polyplastic solutions that fit your business.
+        </div>
+      </section>
+    </main>
+
+    
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>&copy; 2025 Shambhuraavi Polyplast. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
