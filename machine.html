@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machines - Shambhuraavi Polyplast</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar-brand span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #004080;
+    }
+
+    .machine-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .machine-gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .machine-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid #ff6347;
+      margin-top: 50px;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      padding: 0;
+    }
+
+    footer ul li {
+      margin: 0 15px;
+    }
+
+    footer ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    footer ul li a:hover {
+      color: #ff6347;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .machine-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-brand">
+      <img src="logo.png.jpg" alt="Shambhuraavi Logo" />
+      <span>Shambhuraavi Polyplast</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="feature.html">Features</a>
+      <a href="machine.html">Machines</a>
+      <a href="clients.html">Clients</a>
+      <a href="product.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Machines</h2>
+    <div class="machine-gallery">
+      <img src="machine1.jpeg" alt="Machine 1" />
+      <img src="machine2.jpeg" alt="Machine 2" />
+      <img src="machine3.jpeg" alt="Machine 3" />
+      <img src="machine4.jpeg" alt="Machine 4" />
+      <img src="machine5.jpeg" alt="Machine 5" />
+      <img src="machine6.png" alt="Machine 6" />
+    </div>
+  </main>
+
+  <main>
+    <h2>SHOP FLOOR & FINISH GOOD AREA</h2>
+    <div class="machine-gallery">
+      <img src="machine7.png" alt="Shop Floor" />
+      <img src="machine8.png" alt="Finish Goods" />
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <p>&copy; 2025 Shambhuraavi Polyplast. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

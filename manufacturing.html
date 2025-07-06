@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manufacturing - Shambhuraavi Polyplast</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .navbar {
+      background-color: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .navbar img { height: 50px; margin-right: 10px; }
+    .navbar span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: #ffcc00; }
+
+    main {
+      flex: 1;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #004080;
+    }
+
+    .section-text {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      text-align: justify;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .step-box {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .step-box h3 {
+      color: #ff6347;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid #ff6347;
+      margin-top: 60px;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      padding: 0;
+    }
+
+    footer ul li {
+      margin: 0 15px;
+    }
+
+    footer ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    footer ul li a:hover {
+      color: #ff6347;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      h2 { font-size: 2rem; }
+      .section-text { font-size: 1rem; padding: 0 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div style="display: flex; align-items: center;">
+      <img src="logo.png.jpg" alt="Shambhuraavi Logo" />
+      <span>Shambhuraavi Polyplast</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="feature.html">Features</a>
+      <a href="machine.html">Machines</a>
+      <a href="clients.html">Clients</a>
+      <a href="product.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>How Our Products Are Manufactured</h2>
+    <p class="section-text">
+      At Shambhuraavi Polyplast, we follow a structured, high-quality manufacturing process starting from recycled plastic material to finished packaging goods. With cutting-edge machinery like Monolayer Blown Film Plants and Bottom Seal Bag Machines, our production line ensures durability, cost-efficiency, and zero-defect output for every batch. All raw materials and outputs are quality tested and stored in our 20,000 sq. ft. facility before delivery.
+    </p>
+
+    <div class="steps">
+      <div class="step-box">
+        <h3>1. Plastic Recycling</h3>
+        <p>We begin with plastic scrap, recycled and converted into high-grade granules.</p>
+      </div>
+      <div class="step-box">
+        <h3>2. Film Extrusion</h3>
+        <p>Granules are processed through monolayer blown film plants to form LDPE/HDPE films.</p>
+      </div>
+      <div class="step-box">
+        <h3>3. Cutting & Bag Making</h3>
+        <p>Advanced Bottom Seal Bag Machines shape the films into bags, sheets, or rolls.</p>
+      </div>
+      <div class="step-box">
+        <h3>4. Quality Control</h3>
+        <p>Every product passes through strict ISO 9001:2015-compliant checks.</p>
+      </div>
+      <div class="step-box">
+        <h3>5. Packaging & Storage</h3>
+        <p>Approved goods are packed and moved to our 5,000 sq. ft. storage before dispatch.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <p>&copy; 2025 Shambhuraavi Polyplast. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar-brand span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 40px 20px;
+      flex: 1;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #004080;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 30px 40px;
+      justify-items: center;
+    }
+
+    .product-item {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .product-item img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      filter: grayscale(50%);
+      transition: filter 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-item img:hover {
+      filter: grayscale(0);
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid #ff6347;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      padding: 0;
+    }
+
+    footer ul li {
+      margin: 0 15px;
+    }
+
+    footer ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    footer ul li a:hover {
+      color: #ff6347;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .product-item img {
+        width: 120px;
+        height: 120px;
+      }
+
+      footer p {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-brand">
+      <img src="logo.png.jpg" alt="Shambhuraavi Logo" />
+      <span>Shambhuraavi Polyplast</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="feature.html">Features</a>
+      <a href="machine.html">Machines</a>
+      <a href="clients.html">Clients</a>
+      <a href="product.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section id="products">
+    <h2>Products We Manufacture</h2>
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="ppstrap.jpg" alt="PP strap roll" />
+        <div>PP Strap Roll</div>
+      </div>
+      <div class="product-item">
+        <img src="LDPE .jpg" alt="LDPE / HDPE Film" />
+        <div>LDPE / HDPE Film</div>
+      </div>
+      <div class="product-item">
+        <img src="vci.png" alt="VCI" />
+        <div>VCI Polythene Film, Bag, Cover, Sheet</div>
+      </div>
+      <div class="product-item">
+        <img src="antistatic.jpg" alt="Antistatic" />
+        <div>Antistatic Polythene Film, Bag, Cover, Sheet</div>
+      </div>
+      <div class="product-item">
+        <img src="airbubble.jpg" alt="Air Bubble" />
+        <div>Air Bubble Roll, Sheet, Bag, Cover</div>
+      </div>
+      <div class="product-item">
+        <img src="bopp.jpg" alt="BOPP Tapes" />
+        <div>BOPP Tapes</div>
+      </div>
+      <div class="product-item">
+        <img src="foam.jpg" alt="Foam" />
+        <div>PE Foam Rolls, Bags</div>
+      </div>
+      <div class="product-item">
+        <img src="ldshrink.jpg" alt="LD Shrink" />
+        <div>LD Shrink Film</div>
+      </div>
+      <div class="product-item">
+        <img src="Monolayer.png" alt="Monolayer" />
+        <div>Monolayer Blown Film Plant</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <p>&copy; 2025 Shambhuraavi Polyplast. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
